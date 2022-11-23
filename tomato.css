@@ -5,46 +5,45 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 /* Intro */
-#IntroContainer{
+#IntroContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-#mainLogo{
+#mainLogo {
   width: 80px;
   position: relative;
   top: 20px;
   left: 20px;
 }
 
-#IntroContainer section{
+#IntroContainer section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section h1{
+section h1 {
   font-size: 1.8rem;
   margin: 0;
   margin-bottom: 10px;
 }
 
-section h1:first-child{
+section h1:first-child {
   margin-top: 70px;
 }
 
-section img{
+section img {
   width: 70vw;
 }
 
-section p{
+section p {
   font-size: 1rem;
   text-align: center;
-  line-height:25px;
+  line-height: 25px;
   margin-top: 45px;
 }
-
 
 /*윗페이지*/
 #pinataPage {
@@ -108,7 +107,7 @@ section p{
 
 /*아래 페이지*/
 .tomatoFarm {
-  background-image: url(../assets/tomatoBackground.jpg);
+  background-image: url(assets/tomatoBackground.jpg);
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -173,13 +172,12 @@ form button img {
   font-size: 20px;
 }
 
-#buttons{
+#buttons {
   display: flex;
   margin-top: 40px;
-  
 }
 
-#buttons button{
+#buttons button {
   padding: 15px 25px;
   border-radius: 50%;
   font-weight: 600;
@@ -196,7 +194,7 @@ form button img {
   margin-right: 20px;
 }
 
-#goIntro{
+#goIntro {
   background-color: tomato;
   border: none;
   color: white;
@@ -428,7 +426,7 @@ ul li:before {
   height: 35px;
   width: 35px;
   margin-right: 10px;
-  background-image: url('./assets/tomato1.png');
+  background-image: url('assets/tomato1.png');
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: -35px;
