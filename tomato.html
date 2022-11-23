@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tomato.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/tomatofavicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Welcome To Tomato Farm</title>
+  </head>
+  <body>
+    <div id="pinataPage">
+      <h1>WANTED</h1>
+      <p>
+        A suspicious pinata appeared in the land. <br />
+        Be careful as you spread the spirit of misfortune
+      </p>
+      <img src="../assets/피나타닫힌.png" alt="" />
+      <h2>PINATA</h2>
+      <h3>$ 777,777</h3>
+    </div>
+    <a id="BottomButton" class="ScrollButton"
+      ><img src="../assets/angle-down.png"
+    /></a>
+    <div class="tomatoFarm">
+      <div class="contents">
+        <img src="../assets/피나타닫힌.png" class="pinata open" />
+        <img src="../assets/피나타열린.png" class="pinata closed transparent" />
+      </div>
+      <div class="hearts">
+        <img src="../assets/heart1.png" alt="" / class="heart transparent">
+        <img src="../assets/heart2.png" alt="" class="heart transparent" />
+        <img src="../assets/heart3.png" alt="" class="heart transparent" />
+        <img src="../assets/heart4.png" alt="" class="heart transparent" />
+        <img src="../assets/heart5.png" alt="" class="heart transparent" />
+        <img src="../assets/heart1.png" alt=""  class="heart transparent"/>
+        <img src="../assets/heart4.png" alt="" class="heart transparent" />
+        <img src="../assets/heart2.png" alt="" class="heart transparent" />
+        <img src="../assets/heart5.png" alt="" class="heart transparent" />
+        <img src="../assets/heart3.png" alt="" class="heart transparent" />
+      </div>
+      <div>
+        <form action="" id="tomato_form">
+          <label for="tomato">사랑을 담은 말을 던져주세요</label>
+          <input type="text" id="tomato" />
+          <button form="tomato_form" id="tomatoBtn">
+            <img src="../assets/tomato1.png" />
+          </button>
+          <span>Click Tomato!</span>
+        </form>
+      </div>
+      <div id="num"><span id="leftNum">3</span>개를 더 던져주세요!</div>
+      <ul class="tomato_ul transparent"></ul>
+      <div id="buttons">
+        <button id="resetBtn" onclick="reset()">다시하기</button>
+        <button id="goIntro" onclick="goIntro()">처음으로</button>
+      </div>
+    </div>
+    <a id="footer"></a>
+    <script src="./tomato.js"></script>
+  </body>
+</html>

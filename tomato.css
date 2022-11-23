@@ -1,0 +1,435 @@
+body {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+/* Intro */
+#IntroContainer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainLogo{
+  width: 80px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+#IntroContainer section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h1{
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+section h1:first-child{
+  margin-top: 70px;
+}
+
+section img{
+  width: 70vw;
+}
+
+section p{
+  font-size: 1rem;
+  text-align: center;
+  line-height:25px;
+  margin-top: 45px;
+}
+
+
+/*윗페이지*/
+#pinataPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pinataPage h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+#pinataPage p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+#pinataPage img {
+  width: 95vw;
+  margin-top: -20px;
+}
+
+#pinataPage h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin: 0;
+  margin-top: -25px;
+}
+
+#pinataPage h3 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.ScrollButton {
+  position: fixed; /* 버튼의 위치 고정 */
+  right: 45vw; /* x 위치 입력 */
+  cursor: pointer; /* 호버링 했을 때 커서 모양 변경 */
+  z-index: 10; /* 다른 태그에 가려지지 않게 우선순위 변경 */
+}
+
+.ScrollButton a {
+  height: 0px;
+}
+
+.ScrollButton img {
+  width: 50px !important;
+  height: 50px;
+}
+
+#BottomButton {
+  bottom: 20px;
+}
+
+/*아래 페이지*/
+.tomatoFarm {
+  background-image: url(../assets/tomatoBackground.jpg);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pinata {
+  width: 80vw;
+}
+
+.transparent {
+  display: none;
+}
+
+form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+form input {
+  height: 5vh;
+  width: 55vw;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+form span {
+  font-size: 1.3rem;
+}
+
+form button img {
+  width: 15vw;
+}
+
+#tomato_form span {
+  color: white;
+}
+
+#num {
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#buttons{
+  display: flex;
+  margin-top: 40px;
+  
+}
+
+#buttons button{
+  padding: 15px 25px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 15px;
+  width: 110px;
+  height: 48px;
+  text-align: center;
+}
+
+#resetBtn {
+  background-color: white;
+  border: none;
+  color: tomato;
+  margin-right: 20px;
+}
+
+#goIntro{
+  background-color: tomato;
+  border: none;
+  color: white;
+}
+
+.heart {
+  width: 30px;
+  position: absolute;
+}
+
+.hearts {
+  position: relative;
+}
+
+.heart:first-child {
+  animation: heartdown1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: -100px;
+  right: -50px;
+}
+
+.tomato_ul {
+  /*background-color: tomato;*/
+  padding: 30px 75px;
+  border-radius: 50%;
+}
+
+@keyframes heartdown1 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: -100px;
+    right: -50px;
+  }
+}
+
+.heart:nth-child(2) {
+  animation: heartdown2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: -150px;
+  right: 5px;
+}
+
+@keyframes heartdown2 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: -150px;
+    right: 5px;
+  }
+}
+
+.heart:nth-child(3) {
+  animation: heartdown3;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: -100px;
+  right: 30px;
+}
+
+@keyframes heartdown3 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: -100px;
+    right: 30px;
+  }
+}
+
+.heart:nth-child(4) {
+  animation: heartdown4;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: -60px;
+  right: -30px;
+}
+
+@keyframes heartdown4 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: -60px;
+    right: -30px;
+  }
+}
+
+.heart:nth-child(5) {
+  animation: heartdown5;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: -50px;
+  right: 90px;
+}
+
+@keyframes heartdown5 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: -50px;
+    right: 90px;
+  }
+}
+
+.heart:nth-child(6) {
+  animation: heartdown6;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: -10px;
+  right: 30px;
+}
+
+@keyframes heartdown6 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: -10px;
+    right: 30px;
+  }
+}
+
+.heart:nth-child(7) {
+  animation: heartdown7;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: 10px;
+  right: 110px;
+}
+
+@keyframes heartdown7 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: 10px;
+    right: 110px;
+  }
+}
+
+.heart:nth-child(8) {
+  animation: heartdown8;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  top: 20px;
+  right: -100px;
+}
+
+@keyframes heartdown8 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    top: 20px;
+    right: -100px;
+  }
+}
+
+.heart:nth-child(9) {
+  animation: heartdown9;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  right: -150px;
+  top: -20px;
+}
+
+@keyframes heartdown9 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    right: -150px;
+    top: -20px;
+  }
+}
+
+.heart:last-child {
+  animation: heartdown10;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  right: -110px;
+  top: -45px;
+}
+
+@keyframes heartdown10 {
+  from {
+    top: -180px;
+    right: -15px;
+  }
+  to {
+    right: -110px;
+    top: -45px;
+  }
+}
+
+ul {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  /*color: white;*/
+  margin-bottom: -20px;
+}
+
+ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+ul li:before {
+  content: '';
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  background-image: url('./assets/tomato1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -35px;
+}
