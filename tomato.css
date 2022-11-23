@@ -107,7 +107,7 @@ section p {
 
 /*아래 페이지*/
 .tomatoFarm {
-  background-image: url('assets/tomatoBackground.jpg');
+  background-image: url('assets/background.jpg');
   display: flex;
   height: 100vh;
   flex-direction: column;
