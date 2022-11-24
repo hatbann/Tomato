@@ -22,6 +22,47 @@ p {
   z-index: 100;
 }
 
+/*peace*/
+#peacePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#peachBackground {
+  position: absolute;
+  width: 100vw;
+  height: 400px;
+  top: 90px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #f9b1cf 0%,
+    rgba(255, 183, 213, 0.791667) 38.54%,
+    rgba(255, 220, 235, 0) 100%
+  );
+}
+
+#peacePage img {
+  width: 100vw;
+  margin-top: 80px;
+  z-index: 5;
+}
+
+#dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#dots img {
+  width: 50px;
+  margin-top: 30px;
+}
+
 /*News*/
 #newsPage {
   height: 100vh;
@@ -44,15 +85,18 @@ p {
 #posterPage {
   display: flex;
   flex-direction: column;
+  height: 80vh;
+  align-items: center;
 }
 
 #posterPage img {
-  width: 100vw;
+  width: 90vw;
+  margin-left: 10px;
 }
 
 #posterPage p {
   text-align: center;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 /*Land */
@@ -62,15 +106,31 @@ p {
   align-items: center;
   height: 100vh;
   justify-content: center;
+  margin-bottom: 150px;
+  position: relative;
 }
 
 #landPage img {
-  width: 95vw;
+  width: 100vw;
+  z-index: 6;
 }
 
 #landPage p {
   text-align: center;
   margin-top: 50px;
+}
+
+#pollutedBackground {
+  position: absolute;
+  width: 100vw;
+  height: 400px;
+  top: 90px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #420000 0%,
+    rgba(125, 69, 73, 0.6875) 40.04%,
+    rgba(255, 220, 235, 0) 100%
+  );
 }
 
 /*Police*/
