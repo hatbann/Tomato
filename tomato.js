@@ -6,6 +6,8 @@ const hearts = document.querySelectorAll('.heart');
 const form = $('#tomato_form');
 const ul = $('.tomato_ul');
 let num = $('#leftNum');
+const poster = $('#policePagePoster');
+const cancelBtn = $('#disappearAgainBtn');
 const resetBtn = $('#resetBtn');
 
 const tomatos = [];
@@ -61,27 +63,44 @@ function makeTomatoList(tomatos) {
   ul.append(list1, list2, list3);
 }
 
-function enterPage(){
+function enterPage() {
   location.replace('./tomato.html');
 }
+function goCongrat() {
+  location.replace('./Congratulation.html');
+}
 
-function goIntro(){
+function goIntro() {
   location.replace('./tomatoIntro.html');
 }
 
-function reset(){
+function reset() {
   window.location.href = window.location.href;
 }
 
+function popupPoster() {
+  poster.removeClass('transparent');
+  cancelBtn.removeClass('transparent');
+}
 
+function disappearPoster() {
+  poster.addClass('transparent');
+  cancelBtn.addClass('transparent');
+}
 
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
+      $('#TopButton').fadeIn();
       $('#BottomButton').fadeOut();
     } else {
+      $('#TopButton').fadeOut();
       $('#BottomButton').fadeIn();
     }
+  });
+
+  $('#TopButton').click(function () {
+    $('html').animate({ scrollTop: 0 }, 600);
   });
 
   $('#BottomButton').click(function () {
