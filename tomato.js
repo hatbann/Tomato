@@ -5,7 +5,7 @@ const pinataClosed = $('.closed');
 const hearts = document.querySelectorAll('.heart');
 const form = $('#tomato_form');
 const ul = $('.tomato_ul');
-let num = $('#leftNum');
+let leftnum = $('#leftNum');
 const poster = $('#policePagePoster');
 const cancelBtn = $('#disappearAgainBtn');
 const resetBtn = $('#resetBtn');
@@ -28,24 +28,14 @@ function stackTomato(e) {
   tomatoNum++;
   input.val('');
   console.log(tomatoNum);
-  num.text(3 - tomatoNum);
+  leftnum.text(tomatoNum);
   if (tomatoNum === 3) {
     console.log(tomatos);
     console.log('끝!');
-    makeTransparent();
-    makeTomatoList(tomatos);
     const numDiv = $('#num');
     numDiv.text('');
+    setTimeout(goTomato4, 2000);
   }
-}
-
-function makeTransparent() {
-  pinataOpen.addClass('transparent');
-  pinataClosed.removeClass('transparent');
-  ul.removeClass('transparent');
-  hearts.forEach(function (heart) {
-    $(heart).removeClass('transparent');
-  });
 }
 
 function makeTomatoList(tomatos) {
@@ -63,13 +53,6 @@ function makeTomatoList(tomatos) {
   ul.append(list1, list2, list3);
 }
 
-function enterPage() {
-  location.replace('./tomato.html');
-}
-function goCongrat() {
-  location.replace('./Congratulation.html');
-}
-
 function goIntro() {
   location.replace('./tomatoIntro.html');
 }
@@ -78,16 +61,11 @@ function reset() {
   window.location.href = window.location.href;
 }
 
-function popupPoster() {
-  poster.removeClass('transparent');
-  cancelBtn.removeClass('transparent');
-}
-
-function disappearPoster() {
-  poster.addClass('transparent');
-  cancelBtn.addClass('transparent');
-}
-
+//피나타 사라지게 하기
+$('.pinata').click(function (e) {
+  let pinata = $(e.currentTarget);
+  pinata.addClass('transparent');
+});
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
@@ -107,3 +85,28 @@ $(function () {
     $('html').animate({ scrollTop: $('#footer').offset().top }, 600);
   });
 });
+
+/* ------------페이지 이동 -------------*/
+function goTomato1() {
+  location.replace('./tomato1.html');
+}
+
+function goTomato2() {
+  location.replace('./tomato2.html');
+}
+
+function goTomato3() {
+  location.replace('./tomato3.html');
+}
+
+function goTomato4() {
+  location.replace('./tomato4.html');
+}
+
+function goCongrat() {
+  location.replace('./Congratulation.html');
+}
+
+function goIntro() {
+  location.replace('./tomatoIntro.html');
+}

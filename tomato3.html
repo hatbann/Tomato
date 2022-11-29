@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tomato.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <title>Love Tomato Farm</title>
+  </head>
+  <body>
+    <div class="tomatoFarm">
+      <div class="contents">
+        <img src="assets/pinataClosed.png" class="pinata open" />
+      </div>
+      <div>
+        <form action="" id="tomato_form">
+          <label for="tomato">사랑을 담은 말을 던져주세요</label>
+          <input type="text" id="tomato" />
+          <button form="tomato_form" id="tomatoBtn">
+            <img src="assets/tomato1.png" />
+          </button>
+          <span>Click Tomato!</span>
+        </form>
+      </div>
+      <div id="num"><span id="leftNum">0</span>/3</div>
+      <ul class="tomato_ul transparent"></ul>
+    </div>
+
+    <script src="tomato.js"></script>
+  </body>
+</html>

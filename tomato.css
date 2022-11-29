@@ -1,10 +1,16 @@
 body {
   font-size: 10px;
   margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  left: 320px;
+  z-index: 200;
 }
 
 p {
@@ -14,206 +20,6 @@ p {
 
 .transparent {
   display: none;
-}
-#weblogo {
-  position: fixed;
-  width: 70px;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
-}
-
-/*peace*/
-#peacePage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-}
-
-#peachBackground {
-  position: absolute;
-  width: 100vw;
-  height: 400px;
-  top: 90px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #f9b1cf 0%,
-    rgba(255, 183, 213, 0.791667) 38.54%,
-    rgba(255, 220, 235, 0) 100%
-  );
-}
-
-#peacePage img {
-  width: 100vw;
-  margin-top: 80px;
-  z-index: 5;
-}
-
-#dots {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-#dots img {
-  width: 50px;
-  margin-top: 30px;
-}
-
-/*News*/
-#newsPage {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#newsPage img {
-  width: 100vw;
-}
-
-#newsPage p {
-  text-align: center;
-  margin-top: 30px;
-}
-
-/*Poster*/
-#posterPage {
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  align-items: center;
-}
-
-#posterPage img {
-  width: 90vw;
-  margin-left: 10px;
-}
-
-#posterPage p {
-  text-align: center;
-  margin: 50px 0;
-}
-
-/*Land */
-#landPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
-  margin-bottom: 150px;
-  position: relative;
-}
-
-#landPage img {
-  width: 100vw;
-  z-index: 6;
-}
-
-#landPage p {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#pollutedBackground {
-  position: absolute;
-  width: 100vw;
-  height: 400px;
-  top: 90px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #420000 0%,
-    rgba(125, 69, 73, 0.6875) 40.04%,
-    rgba(255, 220, 235, 0) 100%
-  );
-}
-
-/*Police*/
-#policePage {
-  height: 100vh;
-  position: relative;
-  text-align: center;
-}
-
-#policeImg {
-  width: 100vw;
-}
-
-.speechBubble {
-  position: absolute;
-  width: 100px;
-}
-.speechBubble,
-.one {
-  top: 48px;
-  left: 30px;
-}
-
-.speechBubble.two {
-  top: 84px;
-  left: 226px;
-}
-
-.speechBubble.three {
-  top: 203px;
-  left: 5px;
-}
-
-.speech {
-  position: absolute;
-  text-align: center;
-}
-
-.speech.one {
-  top: 11px;
-  left: 43px;
-}
-
-.speech.two {
-  top: 30px;
-  left: 271px;
-}
-.speech.three {
-  top: 177px;
-  left: 10px;
-}
-
-#policePage p:last-child {
-  margin-top: 50px;
-}
-
-#clickhere {
-  color: tomato;
-  position: absolute;
-  top: 99px;
-  left: 248px;
-  font-size: 12px;
-}
-
-#policePagePoster {
-  width: 100vw;
-  z-index: 98;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#disappearAgainBtn {
-  border: none;
-  color: white;
-  background-color: tomato;
-  padding: 5px 10px;
-  border-radius: 50%;
-  z-index: 99;
-  position: absolute;
-  bottom: 180px;
-  left: 290px;
 }
 
 /* Intro */
@@ -257,73 +63,47 @@ section p {
   margin-top: 45px;
 }
 
-/*윗페이지*/
-#pinataPoster {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*----------tomato1-------------*/
+
+/*--------------------------------/
+
+
+/*----------tomato2-------------*/
+#tomato2 {
+  position: relative;
 }
 
-#pinataPoster h1 {
-  font-size: 70px;
-  font-weight: 900;
-  margin-bottom: 0px;
-  margin-top: 50px;
+#tomato2 #land {
+  width: 100vw;
+  position: absolute;
+  top: 166px;
 }
 
-#pinataPoster p {
-  text-align: center;
-  font-size: 0.8rem;
-  margin: 0;
-  font-weight: 500;
+#tomato2 .pinata {
+  position: absolute;
 }
 
-#pinataPoster img {
-  width: 95vw;
-  margin-top: -20px;
+#tomato2 #pinata1 {
+  width: 50vw;
+  top: 30px;
 }
 
-#pinataPoster h2 {
-  font-size: 45px;
-  font-weight: 800;
-  margin: 0;
-  margin-top: -25px;
+#tomato2 #pinata2 {
+  z-index: 10;
+  top: 30px;
+  width: 30vw;
+  left: 200px;
 }
 
-#pinataPoster h3 {
-  font-size: 25px;
-  font-weight: 800;
-  margin-top: 10px;
+#tomato2 #pinata3 {
 }
 
-.ScrollButton {
-  position: fixed; /* 버튼의 위치 고정 */
-  right: 45vw; /* x 위치 입력 */
-  cursor: pointer; /* 호버링 했을 때 커서 모양 변경 */
-  z-index: 10; /* 다른 태그에 가려지지 않게 우선순위 변경 */
-}
+/*--------------------------------/
 
-.ScrollButton a {
-  height: 0px;
-}
 
-.ScrollButton img {
-  width: 50px !important;
-  height: 50px;
-}
-
-#BottomButton {
-  bottom: 20px;
-}
-
-#TopButton {
-  top: 10px;
-}
-
-/*아래 페이지*/
+/*----------tomato3-------------*/
 .tomatoFarm {
-  background-image: url('assets/background.jpg');
+  background-color: aquamarine;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -388,46 +168,14 @@ form button img {
   font-size: 20px;
 }
 
-#buttons {
-  display: flex;
-  margin-top: 40px;
-}
+/*--------------------------------/
 
-#buttons button {
-  padding: 15px 25px;
-  border-radius: 50%;
-  font-weight: 600;
-  font-size: 15px;
-  width: 110px;
-  height: 48px;
-  text-align: center;
-}
 
-#resetBtn {
-  background-color: white;
-  border: none;
-  color: tomato;
-  margin-right: 20px;
-}
 
-#gonextBtn {
-  background-color: tomato;
-  border: none;
-  color: white;
-}
-
-#goIntro {
-  padding: 15px 25px;
-  border-radius: 50%;
-  font-weight: 600;
-  font-size: 15px;
-  width: 110px;
-  height: 48px;
-  text-align: center;
-  background-color: tomato;
-  border: none;
-  color: white;
-  margin-top: 30px;
+/*----------tomato4-------------*/
+#tomato4 {
+  height: 100vh;
+  position: relative;
 }
 
 .heart {
@@ -435,14 +183,7 @@ form button img {
   position: absolute;
 }
 
-.hearts {
-  position: relative;
-}
-
 .heart:first-child {
-  animation: heartdown1;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: -100px;
   right: -50px;
 }
@@ -465,9 +206,6 @@ form button img {
 }
 
 .heart:nth-child(2) {
-  animation: heartdown2;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: -150px;
   right: 5px;
 }
@@ -484,9 +222,6 @@ form button img {
 }
 
 .heart:nth-child(3) {
-  animation: heartdown3;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: -100px;
   right: 30px;
 }
@@ -503,9 +238,6 @@ form button img {
 }
 
 .heart:nth-child(4) {
-  animation: heartdown4;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: -60px;
   right: -30px;
 }
@@ -522,9 +254,6 @@ form button img {
 }
 
 .heart:nth-child(5) {
-  animation: heartdown5;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: -50px;
   right: 90px;
 }
@@ -541,9 +270,6 @@ form button img {
 }
 
 .heart:nth-child(6) {
-  animation: heartdown6;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: -10px;
   right: 30px;
 }
@@ -560,9 +286,6 @@ form button img {
 }
 
 .heart:nth-child(7) {
-  animation: heartdown7;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: 10px;
   right: 110px;
 }
@@ -579,9 +302,6 @@ form button img {
 }
 
 .heart:nth-child(8) {
-  animation: heartdown8;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   top: 20px;
   right: -100px;
 }
@@ -598,9 +318,6 @@ form button img {
 }
 
 .heart:nth-child(9) {
-  animation: heartdown9;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   right: -150px;
   top: -20px;
 }
@@ -617,9 +334,6 @@ form button img {
 }
 
 .heart:last-child {
-  animation: heartdown10;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
   right: -110px;
   top: -45px;
 }
@@ -662,6 +376,10 @@ ul li:before {
   margin-left: -35px;
 }
 
+/*--------------------------------/
+
+/*아래 페이지*/
+
 /*Congrat*/
 #congratContainer {
   height: 100vh;
@@ -680,5 +398,4 @@ ul li:before {
   margin-top: 40px;
   font-weight: 500;
   margin-bottom: 0px;
-
 }
