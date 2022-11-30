@@ -13,6 +13,14 @@ body {
   z-index: 200;
 }
 
+#star{
+  width: 7vw;
+  position: fixed;
+  top: 30px;
+  left: 320px;
+  z-index: 200;
+}
+
 p {
   font-size: 15px;
   font-weight: 600;
@@ -178,15 +186,20 @@ form button img {
   position: relative;
 }
 
-.heart {
-  width: 30px;
+#tomato4 .pinata{
+  width: 85vw;
   position: absolute;
+  left: 30px;
+  z-index: 10;
 }
 
-.heart:first-child {
-  top: -100px;
-  right: -50px;
+.heart {
+  width: 75px;
+  position: absolute;
+  top: 115px;
+  right: 162px;
 }
+
 
 .tomato_ul {
   /*background-color: tomato;*/
@@ -194,159 +207,232 @@ form button img {
   border-radius: 50%;
 }
 
+.heart:first-child {
+  animation: heartdown1 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ animation-delay: 0.5s;
+ z-index: 6;
+}
+
 @keyframes heartdown1 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: -100px;
-    right: -50px;
+    top: 486px;
+    right: 239px;
+    transform:rotate(260deg);
   }
 }
 
 .heart:nth-child(2) {
-  top: -150px;
-  right: 5px;
+  animation: heartdown2 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ z-index: 7;
 }
 
 @keyframes heartdown2 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 125px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: -150px;
-    right: 5px;
+    top: 496px;
+    right: 190px;
+    transform:rotate(321deg);
   }
 }
 
 .heart:nth-child(3) {
-  top: -100px;
-  right: 30px;
+  animation: heartdown3 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ z-index: 4;
+ animation-delay: 1s;
 }
 
 @keyframes heartdown3 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: -100px;
-    right: 30px;
+    top: 676px;
+    right: 135px;
+    transform:rotate(320deg);
+
   }
 }
 
 .heart:nth-child(4) {
-  top: -60px;
-  right: -30px;
+  animation: heartdown4 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ animation-delay: 0.7s;
 }
 
 @keyframes heartdown4 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: -60px;
-    right: -30px;
+    top:500px;
+    right: 80px;
+    transform:rotate(-280deg);
   }
 }
 
 .heart:nth-child(5) {
-  top: -50px;
-  right: 90px;
+  animation: heartdown5 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
 }
 
 @keyframes heartdown5 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: -50px;
-    right: 90px;
+    top: 439px;
+    right: 173px;
+    transform:rotate(-320deg);
   }
 }
 
 .heart:nth-child(6) {
-  top: -10px;
-  right: 30px;
+  z-index: 3;
+  animation: heartdown6 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ animation-delay: 0.5s;
 }
 
 @keyframes heartdown6 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: -10px;
-    right: 30px;
+    top: 489px;
+    right: 139px;
+    transform:rotate(-330deg);
   }
 }
 
 .heart:nth-child(7) {
-  top: 10px;
-  right: 110px;
+  animation: heartdown7 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ animation-delay: 1s;
 }
 
 @keyframes heartdown7 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: 10px;
-    right: 110px;
+    top: 450px;
+    right: 91px;
+    transform:rotate(240deg);
   }
 }
 
 .heart:nth-child(8) {
-  top: 20px;
-  right: -100px;
+  z-index: -1;
+  animation: heartdown8 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
 }
 
 @keyframes heartdown8 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    top: 20px;
-    right: -100px;
+    top: 705px;
+    right: 180px;
+    transform:rotate(-230deg);
   }
 }
 
 .heart:nth-child(9) {
-  right: -150px;
-  top: -20px;
+  animation: heartdown9 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ animation-delay: 1.3s;
 }
 
 @keyframes heartdown9 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    right: -150px;
-    top: -20px;
+    top: 432px;
+    right: 119px;
+    transform:rotate(-300deg);
   }
 }
 
 .heart:last-child {
-  right: -110px;
-  top: -45px;
+  animation: heartdown10 forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ animation-iteration-count: 1;
+ animation-delay: 0.2s;
 }
+
 
 @keyframes heartdown10 {
   from {
-    top: -180px;
-    right: -15px;
+    top: 115px;
+    right: 162px;
+    transform:rotate(0deg);
   }
   to {
-    right: -110px;
-    top: -45px;
+    top: 428px;
+    right: 216px;
+    transform:rotate(270deg);
   }
+}
+
+#messege{
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+}
+
+#xBtn{
+  width: 7vw;
+  position: absolute;
+  top: 30px;
+  left: 320px;
+  z-index: 200;
 }
 
 ul {
@@ -375,6 +461,8 @@ ul li:before {
   background-repeat: no-repeat;
   margin-left: -35px;
 }
+
+
 
 /*--------------------------------/
 

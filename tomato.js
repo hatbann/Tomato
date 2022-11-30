@@ -66,26 +66,27 @@ $('.pinata').click(function (e) {
   let pinata = $(e.currentTarget);
   pinata.addClass('transparent');
 });
-$(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
-      $('#TopButton').fadeIn();
-      $('#BottomButton').fadeOut();
-    } else {
-      $('#TopButton').fadeOut();
-      $('#BottomButton').fadeIn();
-    }
-  });
 
-  $('#TopButton').click(function () {
-    $('html').animate({ scrollTop: 0 }, 600);
-  });
 
-  $('#BottomButton').click(function () {
-    $('html').animate({ scrollTop: $('#footer').offset().top }, 600);
-  });
+$('#star').click(function(e){
+  let star = $('#star');
+  let xBtn = $('#xBtn');
+  let msg = $('#messege');
+
+  star.addClass('transparent');
+  xBtn.removeClass('transparent');
+  msg.removeClass('transparent');
 });
 
+$('#xBtn').click(function(e){
+  let star = $('#star');
+  let xBtn = $('#xBtn');
+  let msg = $('#messege');
+
+  star.removeClass('transparent');
+  xBtn.addClass('transparent');
+  msg.addClass('transparent');
+})
 /* ------------페이지 이동 -------------*/
 function goTomato1() {
   location.replace('./tomato1.html');
