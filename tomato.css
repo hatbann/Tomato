@@ -78,8 +78,33 @@ p {
 }
 
 /*----------tomato1-------------*/
+#tomato1{
+  height: 100vh;
+  background-image: url('assets/background1.png');
+  background-size: cover;
+  position: relative;
+}
+
+#tomato1 video{
+  width: 100vw;
+  position: absolute;
+  top: 282px;
+}
+
+
 
 /*--------------------------------/
+
+/*------tap page-------*/
+#tapPage{
+  height: 100vh;
+  background-image: url('assets/gotoTab.png');
+  background-size: cover;
+}
+
+
+/*--------------*/
+
 
 
 /*----------tomato2-------------*/
@@ -87,7 +112,7 @@ p {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background-image: url("assets/background2.png");
+  background-image: url("assets/background3.png");
   background-size: cover;
 }
 
@@ -135,13 +160,12 @@ left: -50px;
   top: 424px;
   left: 187px;
   z-index: 21;
-  pointer-events: none;
 }
 
 #tomato2 #pinata6 {
   width: 20vw;
-  top: 186px;
-  left: 272px;
+  top: 149px;
+  left: 293px;
 }
 
 #tomato2 #pinata7 {
@@ -151,12 +175,16 @@ left: -50px;
   z-index: 21;
 }
 
+#throwtomato{
+  width: 35vw;
+}
+
 /*--------------------------------/
 
 
 /*----------tomato3-------------*/
 .tomatoFarm {
-  background-image: url("assets/background3.png");
+  background-image: url("assets/background4.png");
   background-size: cover;
   display: flex;
   height: 100vh;
@@ -165,9 +193,30 @@ left: -50px;
   position: relative;
 }
 
+.tomatoFarm .pinata{
+  animation: floatTomato;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 40px;
+}
+
+@keyframes floatTomato {
+  0%{
+    transform:  translate(0,0);
+  }
+  50%{
+    transform:  translate(0,40px);
+  }
+  100%{
+    transform:  translate(0,0);
+  }
+}
+
 form {
   position: absolute;
-  bottom: 52px;
+  bottom: 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,6 +226,7 @@ form {
 
 .pinata {
   width: 80vw;
+  z-index: 3;
 }
 
 .transparent {
@@ -201,10 +251,21 @@ form input {
   margin-bottom: 5px;
   position: absolute;
   bottom: 186px;
+  z-index: 3;
+}
+
+#tomatoBtn p{
+  position: absolute;
+  left: 16px;
+  top: -31px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 #tomatoBtn img {
-  width: 10vw;
+  width: 15vw;
+  z-index: 3;
 }
 
 form span {
@@ -217,7 +278,14 @@ form span {
   color: black;
   font-size: 13px;
   position: absolute;
-  bottom: 103px;
+  bottom: 90px;
+}
+
+#throwtomato{
+  position: absolute;
+  bottom: 156px;
+  z-index: 1;
+  
 }
 
 /*--------------------------------/
@@ -226,9 +294,36 @@ form span {
 
 /*----------tomato4-------------*/
 #tomato4 {
+  background-image: url('assets/background2.png');
+  background-size: cover;
   height: 100vh;
   position: relative;
   overflow: hidden;
+}
+
+.bubble{
+  width: 45vw;
+  position: absolute;
+  z-index: 30;
+}
+
+#bubble1{
+  top: 268px;
+  left: -9px;
+}
+#bubble2{
+  top: 20px;
+  left: 207px;
+}
+
+#fin{
+  position: fixed;
+  bottom: 37px;
+  left: 318px;
+  z-index: 200;
+  font-size: 20px;
+  color: #ff8eca;
+  
 }
 
 #tomato4 .pinata{

@@ -23,12 +23,25 @@ function getTomato(e) {
 
 function stackTomato(e) {
   e.preventDefault();
+  let tomato = $('#throwtomato');
+  tomato_y = tomato.offset().top;
+  console.log(tomato_y);
   tomatos.push(tomatoRef);
   tomatoRef = '';
   tomatoNum++;
   input.val('');
-  console.log(tomatoNum);
   leftnum.text(tomatoNum);
+  tomato.removeClass('transparent');
+  tomato.stop().animate({
+    top : "+140"
+  },1500);
+  setTimeout(function(){
+    tomato.addClass('transparent');
+    tomato.css({
+      "position" : "absoulte",
+      "top": "370px"
+    })
+  },2000);
   if (tomatoNum === 3) {
     console.log(tomatos);
     console.log('끝!');
@@ -67,6 +80,17 @@ $('.pinata').click(function (e) {
   pinata.addClass('transparent');
 });
 
+$('#land').click(function(e){
+  alert('이건 사라지지않아요! 다음장으로 넘어가주세요!');
+  
+});
+
+$('#tapPage').click(function(e){
+  goTomato2();
+})
+
+
+
 
 $('#star').click(function(e){
   let star = $('#star');
@@ -92,7 +116,11 @@ function goTomato1() {
   location.replace('./tomato1.html');
 }
 
-function goTomato2() {
+function goTapto() {
+  location.replace('./tapto.html');
+}
+
+function goTomato2(){
   location.replace('./tomato2.html');
 }
 
