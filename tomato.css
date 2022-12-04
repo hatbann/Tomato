@@ -338,6 +338,7 @@ form span {
   position: absolute;
   top: 115px;
   right: 162px;
+  z-index: 5
 }
 
 
@@ -607,7 +608,7 @@ ul li:before {
   width: 120vw;
   position: absolute;
   bottom: -118px;
-  z-index:-1;
+  z-index:1;
   left: -34px;
 }
 
