@@ -78,6 +78,7 @@ function reset() {
 $('.pinata').click(function (e) {
   let pinata = $(e.currentTarget);
   pinata.addClass('transparent');
+  alert('피나타 제거 완료! 다음 피나타도 부탁해요!');
 });
 
 $('#land').click(function(e){
