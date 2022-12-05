@@ -41,7 +41,7 @@ function stackTomato(e) {
       "position" : "absoulte",
       "top": "370px"
     })
-  },2000);
+  },1600);
   if (tomatoNum === 3) {
     console.log(tomatos);
     console.log('끝!');
