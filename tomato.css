@@ -36,7 +36,7 @@ p {
   display: flex;
   flex-direction: column;
   background-image: url("assets/background.png");
-  background-size: cover;
+  background-size: 375px 667px;
 }
 
 #mainLogo {
@@ -81,7 +81,7 @@ p {
 #tomato1{
   height: 100vh;
   background-image: url('assets/background1.png');
-  background-size: cover;
+  background-size: 375px 667px;
   position: relative;
 }
 
@@ -99,7 +99,7 @@ p {
 #tapPage{
   height: 100vh;
   background-image: url('assets/gotoTab.png');
-  background-size: cover;
+  background-size: 375px 667px;
 }
 
 
@@ -113,7 +113,7 @@ p {
   height: 100vh;
   overflow: hidden;
   background-image: url("assets/background3.png");
-  background-size: cover;
+  background-size: 375px 667px;
 }
 
 #tomato2 #land {
@@ -185,7 +185,7 @@ left: -50px;
 /*----------tomato3-------------*/
 .tomatoFarm {
   background-image: url("assets/background4.png");
-  background-size: cover;
+  background-size: 375px 667px;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -295,7 +295,7 @@ form span {
 /*----------tomato4-------------*/
 #tomato4 {
   background-image: url('assets/background2.png');
-  background-size: cover;
+  background-size: 375px 667px;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -598,7 +598,7 @@ ul li:before {
   width: 35px;
   margin-right: 10px;
   background-image: url('assets/tomato1.png');
-  background-size: contain;
+  background-size: 375px 667px;
   background-repeat: no-repeat;
   margin-left: -35px;
 }
